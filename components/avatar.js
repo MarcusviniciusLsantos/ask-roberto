@@ -1,3 +1,6 @@
+import roberto from '../assets/roberto.png'
+import Image from 'next/image'
+
 export default function Avatar({
   name,
   width = 80,
@@ -8,7 +11,7 @@ export default function Avatar({
 }) {
   return (
     <div className="d-flex mt-2">
-      <img src="/roberto.png" width={width} height={height} />
+      <Image src={roberto} width={width} height={height} />
       {title ? (
         <h4 className={className ? className : "ps-2 mt-4"}>
           <b>{name}</b>
