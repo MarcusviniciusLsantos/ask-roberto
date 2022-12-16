@@ -17,7 +17,7 @@ export default function DocExamples() {
           />
           <Card
             name={
-              '"Create a hackathon idea for german companies in moldova find german students"'
+              '"Propose 5 hackathon ideas for ethereum projects"'
             }
           />
           <Card
