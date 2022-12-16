@@ -24,11 +24,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  justify-content: end;
+  margin-bottom: 30px;
 }
-.main .icon {
-  width: 34px;
-}
+
 .main h3 {
   font-size: 32px;
   line-height: 40px;
@@ -38,29 +37,88 @@
 }
 .main form {
   display: flex;
-  flex-direction: column;
-  width: 320px;
+  flex-direction: row;
 }
 .main input[type="text"] {
   padding: 12px 16px;
-  border: 1px solid #10a37f;
+  border: 1px solid rgb(67, 41, 166);
   border-radius: 4px;
-  margin-bottom: 24px;
+  width: 420px;
+}
+
+.main input[type="text"]:hover {
+  border-color: #202123;
 }
 .main ::placeholder {
   color: #8e8ea0;
   opacity: 1;
 }
 .main input[type="submit"] {
-  padding: 12px 0;
   color: #fff;
-  background-color: #10a37f;
+  margin: 0px 20px;
+  padding: 10px 10px;
+  background-color: rgb(67, 41, 166);
   border: none;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
 }
+
+.main input[type="submit"]:hover {
+  background-color: #202123;
+}
+
 .main .result {
   font-weight: bold;
-  margin-top: 40px;
+}
+
+.menu {
+  background-color: rgb(67, 41, 166);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 4px;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.menu .item {
+  border: 1px solid #69696f;
+  border-radius: 6px;
+  padding: 6px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu .endItem {
+  padding: 6px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu .divisor {
+  height: 1px;
+  margin: 0px 5px 0 5px;
+  background-color: #69696f;
+  
+}
+
+.card {
+  background-color: rgb(105, 105, 111, 0.1);
+  border-radius: 6px;
+  padding: 8px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.titleCard {
+  padding: 2px 0px;
+  margin: 0px 90px;
+}
+
+.iconCard {
+  padding: 2px 0px;
+  margin: 0px 120px;
 }
