@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
@@ -16,5 +18,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "reactstrap": "^9.1.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
