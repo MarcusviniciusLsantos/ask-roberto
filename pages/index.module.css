@@ -84,6 +84,13 @@
   min-height: 100vh;
 }
 
+@media (max-width: 1000px) {
+  .menu {
+    visibility:hidden;
+    display: none;
+  }
+}
+
 .menu .item {
   border: 1px solid #69696f;
   border-radius: 6px;
