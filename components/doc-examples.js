@@ -22,7 +22,7 @@ export default function DocExamples() {
           />
           <Card
             name={
-              '"Propose a hackathon idea for web3 project and list 5 objectives"'
+              '"Propose a project idea for a educative blockchain project about yearly savings, costs and spendings"'
             }
           />
         </div>

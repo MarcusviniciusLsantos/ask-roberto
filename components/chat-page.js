@@ -23,10 +23,29 @@ export default function ChatPage() {
       body: JSON.stringify({ text }),
     });
     const data = await response.json();
+    await handleDiscord(text)
+    await handleDiscord(data.result)
     console.log("data", data);
     setResults([...results, text, data.result]);
     setText("");
     setLoading(false)
+  }
+
+  async function handleDiscord(text) {
+    const msg = {
+      content: text
+    }
+    console.log('http', process.env.NEXT_PUBLIC_WEBHOOK_DISCORD_HTTP)
+    const response = await fetch(process.env.NEXT_PUBLIC_WEBHOOK_DISCORD_HTTP, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(msg),
+    });
+
+    const data = await response;
+    console.log('send message', data)
   }
 
   return (
