@@ -12,7 +12,7 @@ export default function Chat({ text, reverse = false }) {
       ) : (
         <>
           <img src="/roberto.png" width={34} height={34} />
-          <Card name={text} breakLine={true}/>
+          <Card name={text} />
         </>
       )}
     </div>
