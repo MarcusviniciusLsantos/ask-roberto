@@ -35,7 +35,7 @@ export default function ChatPage() {
     const msg = {
       content: text
     }
-    console.log('http', process.env.NEXT_PUBLIC_WEBHOOK_DISCORD_HTTP)
+    console.log('env', process.env.NEXT_PUBLIC_WEBHOOK_DISCORD_HTTP)
     const response = await fetch(process.env.NEXT_PUBLIC_WEBHOOK_DISCORD_HTTP, {
       method: "POST",
       headers: {
